@@ -1,0 +1,120 @@
+.download-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--tm-bg);
+}
+
+.download-header {
+  padding: 3rem 4rem;
+  background-color: var(--tm-accent);
+  color: var(--tm-text-dark);
+  border-bottom: var(--border-thick);
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.download-header h2 {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.download-group {
+  padding: 2.5rem 4rem;
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.download-group:last-child {
+  border-bottom: none;
+}
+
+.download-group h3 {
+  font-size: var(--text-xl);
+  color: var(--tm-bg);
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+.download-group p {
+  font-size: var(--text-base);
+  color: var(--tm-grid);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.download-btn {
+  background-color: var(--tm-btn-text);
+  color: var(--tm-btn-bg);
+  border: var(--border-thick);
+  padding: 1.5rem;
+  font-family: inherit;
+  font-size: var(--text-lg);
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 0 var(--tm-accent);
+  margin-top: auto;
+  transition: none;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.download-btn:hover {
+  background-color: var(--tm-accent);
+  box-shadow: 8px 8px 0 0 var(--tm-bg);
+  color: var(--tm-text-dark);
+}
+
+.support-group {
+  padding: 2rem 4rem;
+}
+
+.support-btn {
+  background-color: var(--tm-bg);
+  color: var(--tm-text-dark);
+  box-shadow: 6px 6px 0 0 var(--tm-btn-text);
+  padding: 1rem;
+  font-size: var(--text-base);
+  margin-top: 0;
+}
+
+@media (max-width: 1023px) {
+  .download-header {
+    padding: 2rem;
+  }
+
+  .download-header h2 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .download-group {
+    padding: 2rem;
+  }
+
+  .support-group {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-header {
+    padding: 1.5rem;
+  }
+
+  .download-header h2 {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .download-group {
+    padding: 1.5rem;
+  }
+
+  .support-group {
+    padding: 1.5rem;
+  }
+}
